@@ -5,20 +5,28 @@
   font-family: Nunito;
   color: white;
 }
+/* .sections {
+  position: sticky !important;
+  top: 0;
+  height: 100vh; */
+
 .nav-container {
   height: 120px;
   width: 100%;
-  background-color: transparent;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url("bg.png");
+  background-size: cover;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding-left: 8%;
   padding-right: 5%;
   align-content: center;
   position: fixed;
+  z-index: 99999;
 }
 
 .logo {
-  height: 50px;
+  height: 2.5rem;
 }
 
 ul.menu {
@@ -29,6 +37,17 @@ ul.menu {
   align-items: center;
   font-size: 14px;
 }
+@media only screen and (max-width: 700px) {
+  ul.menu {
+    display: none;
+  }
+  .nav-container {
+    height: 120px;
+    width: 100%;
+    padding-left: 2.5%;
+  }
+}
+
 ul.menu li::before {
   display: none;
 }
@@ -52,7 +71,9 @@ section {
   margin-top: 70%;
   margin-left: 85px;
   text-transform: uppercase;
+  font-weight: 400;
 }
+
 .maincontent {
   color: white;
   margin-left: 85px;
@@ -60,6 +81,19 @@ section {
   margin-top: 1%;
 }
 
+@media only screen and (max-width: 700px) {
+  .maintitle {
+    font-size: 2.5rem;
+    display: table-caption;
+    margin-top: 70%;
+    margin-left: 1rem;
+  }
+  .maincontent {
+    margin-left: 1rem;
+    width: 80vw;
+    margin-top: 5%;
+  }
+}
 .whoweare {
   position: relative;
 }
@@ -124,6 +158,13 @@ section.rabaofferings {
   grid-template-rows: repeat(6, 1fr);
   grid-template-columns: repeat(2, 1fr);
 }
+@media (max-width: 700px) {
+  section.rabaofferings {
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .rabaofferings-header {
   grid-column: 1/2;
   grid-row: 2/3;
@@ -157,6 +198,7 @@ section.rabaofferings {
   grid-column: 5/6;
   grid-row: 2/3;
   margin-right: 20%;
+  margin-top: 5rem;
 }
 .rabanow {
   height: 3rem;
@@ -175,7 +217,6 @@ section.rabaofferings {
 .rabaofferings-container {
   color: white;
   display: flex;
-  justify-content: space-between;
 }
 
 .bullet {
@@ -189,6 +230,7 @@ section.rabaofferings {
   grid-row: 3/4;
   padding: 3% 11% 0 15%;
 }
+
 .second {
   grid-column: 1/2;
   grid-row: 4/5;
@@ -215,12 +257,66 @@ section.rabaofferings {
   grid-row: 5/6;
   padding: 3% 19% 0 5%;
 }
+@media (max-width: 700px) {
+  .bullet {
+    height: 3rem;
+    margin-top: 2%;
+  }
+  .subcontents {
+    display: none;
+  }
+  .subheader {
+    margin-top: 1.5rem;
+  }
+  .rabaofferings-header {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-left: 5%;
+    margin-top: 10%;
+  }
 
+  .first {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 3% 11% 0 5%;
+  }
+
+  .second {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    padding: 3% 6% 0 5%;
+  }
+  .third {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    padding: 3% 6% 0 5%;
+  }
+
+  .fourth {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    padding: 3% 19% 0 5%;
+  }
+  .fifth {
+    grid-column: 1/2;
+    grid-row: 6/7;
+    padding: 3% 19% 0 5%;
+  }
+  .sixth {
+    grid-column: 1/2;
+    grid-row: 7/8;
+    padding: 3% 1% 0 5%;
+  }
+  .rabanow-offerings {
+    display: none;
+  }
+}
 .rabapricing {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(7, 1fr);
   padding-left: 10%;
+  padding-top: 4%;
 }
 
 .rabapricing-header {
@@ -274,10 +370,13 @@ sub {
   background-color: transparent;
   color: #f9b03e;
   border-radius: 6px;
-  padding: 0.1rem 0.2rem;
+  padding: 0.2rem 0.1rem;
   font-size: 8px;
   text-transform: uppercase;
   margin-left: 7%;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 0.3rem 0.6rem;
+  z-index: 999;
 }
 
 .trackfeatures {
@@ -289,7 +388,7 @@ sub {
   margin-top: 4%;
   font-size: 14px;
 }
-ul li::before {
+ul li.trackfeatureslist::before {
   content: "\2022";
   color: #f9b03e;
   font-weight: bold;
@@ -324,6 +423,58 @@ ul li::before {
   grid-row: 3/6;
   grid-column: 1/2;
 }
+@media (max-width: 700px) {
+  .rabapricing {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    padding-left: 1%;
+    padding-top: 4%;
+    height: 150vh;
+  }
+  .indi {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+
+  .ent {
+    grid-row: 9/10;
+    grid-column: 1/2;
+  }
+  .trackfeatures {
+    grid-row: 5/8;
+    grid-column: 1/2;
+    list-style: none;
+  }
+  .contactus {
+    grid-row: 10/11;
+    grid-column: 1/2;
+    display: grid;
+    align-content: center;
+  }
+
+  .albumfeatures {
+    grid-row: 11/14;
+    grid-column: 1/2;
+    list-style: none;
+  }
+  ul li.trackfeatureslist {
+    margin-left: 3rem;
+  }
+  .albumtrackcontainer {
+    display: flex;
+    justify-content: space-between;
+    grid-row: 4/5;
+    grid-column: 1/2;
+  }
+  .vertical-line {
+    border: 0.1px solid rgba(255, 255, 255, 0.5);
+    height: 1px;
+    margin-top: 10%;
+    grid-row: 8/9;
+    grid-column: 1/2;
+  }
+}
 .howtoraba {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -333,23 +484,49 @@ ul li::before {
 .howtoraba-header {
   grid-row: 2/3;
   grid-column: 1/2;
+  margin-top: 5rem;
 }
 .steps {
   margin-top: 40%;
   grid-row: 3/4;
   margin-left: 50%;
   transform: translateX(-50%);
+  z-index: 9999;
 }
+
+div.circleline {
+  height: 1px;
+  width: 12rem;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  top: 50%;
+  grid-row: 4/5;
+  left: 100%;
+}
+div.lastline {
+  width: 0rem;
+}
+
 .circles {
   position: relative;
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 50%;
-
+  z-index: 99;
   grid-row: 4/5;
   margin-left: 50%;
   transform: translateX(-50%);
 }
+.circles::before {
+  content: "";
+  position: absolute;
+  height: 150%;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  top: -150%;
+  left: 50%;
+}
+
 .circles::after {
   position: absolute;
   top: 50%;
@@ -419,4 +596,111 @@ ul li::before {
 .stepdetails p {
   text-align: center;
   padding: 1% 20%;
+}
+
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-content {
+  width: 70%;
+  height: 30rem;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0.2);
+  background-color: #000000;
+  border: 0.1px solid rgba(249, 176, 62, 0.3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: inline-block;
+  line-height: 1;
+}
+
+.contactform {
+  display: grid;
+  grid-template-rows: 3rem 3rem 3rem 9rem 3rem;
+  justify-items: center;
+  height: 90%;
+  padding: 3rem 1rem;
+  grid-gap: 0.6rem;
+}
+input {
+  height: 2rem;
+  width: 24rem;
+  border: 0.1px solid rgba(249, 176, 62, 0.3);
+  background-color: #000000;
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+textarea {
+  border: 0.1px solid rgba(249, 176, 62, 0.3);
+  background-color: #000000;
+  width: 34rem;
+  height: 6rem;
+  padding-left: 1rem;
+}
+.submit {
+  width: 10.5rem;
+  height: 3rem;
+  background-color: #f9b03e;
+  border-radius: 4px;
+  text-transform: uppercase;
+  border: 0;
+  font-size: 1rem;
+}
+.contactform-title {
+  font-size: 1.5rem;
+}
+.footer {
+  height: 120px;
+  width: 100%;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 7%;
+  padding-right: 5%;
+  align-content: center;
+  position: fixed;
+  bottom: 0%;
+}
+
+ul.footer-menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+ul.footer-menu li:first-child {
+  margin-right: 3.2rem;
+}
+ul.footer-menu li {
+  margin-right: 1.5rem;
+}
+ul.footer-menu li ::before {
+  list-style: none;
+}
+.contact {
+  justify-self: end;
+  align-self: center;
+  padding-right: 6%;
+  font-size: 1rem;
 }

@@ -7,27 +7,45 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Raba</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
+    <footer class="footer">
+      <ul class="footer-menu">
+        <li>&#169;2020</li>
+        <li>
+          <a href="#home"><img src="facebook.svg"/></a>
+        </li>
+        <li>
+          <a href="#home"><img src="twitter.svg"/></a>
+        </li>
+        <li>
+          <a href="#home"><img src="ig.svg"/></a>
+        </li>
+      </ul>
+      <div class="contact"><a href="#popup">Contact</a></div>
+    </footer>
     <nav class="nav-container">
       <img src="rabalogo.png" alt="logo" class="logo" />
 
       <ul class="menu">
-        <li><a href="#">home</a></li>
-        <li><a href="#">who we are</a></li>
-        <li><a href="#">How to raba</a></li>
-        <li><a href="#">offerings</a></li>
-        <li><a href="#">pricing</a></li>
+        <li><a href="#home">home</a></li>
+        <li><a href="#whoweare">who we are</a></li>
+        <li><a href="#howto">How to raba</a></li>
+        <li><a href="#offerings">offerings</a></li>
+        <li><a href="#pricing">pricing</a></li>
       </ul>
     </nav>
-    <section class="home">
+    <section class="home sections" id="home">
       <h1 class="maintitle">Global Entertainment Distribution</h1>
       <p class="maincontent">
         Reach the world with your content today as we journey with you to
         greatness. Just Raba It.
       </p>
     </section>
-    <section class="whoweare">
+
+    <section class="whoweare sections" id="whoweare">
       <div class="contentholder one">
         <div class="shortline"></div>
         <h1 class="subtitle">Who We Are</h1>
@@ -69,7 +87,7 @@
       </div>
     </section>
 
-    <section class="howtoraba ">
+    <section class="howtoraba sections" id="howto">
       <h1 class="howtoraba-header sectionheader">How To Raba</h1>
       <button class="rabanow rabanow-howtoraba">RABA NOW</button>
       <img src="redstep1.png" alt="step1" class="stepone steps" />
@@ -77,11 +95,14 @@
       <img src="yellowstep3.png" alt="step3" class="stepthree steps" />
       <img src="whitestep4.png" alt="step4" class="stepfour steps" />
       <img src="greenstep5.png" alt="step5" class="stepfive steps" />
-      <div class="circles circle-one"></div>
-      <div class="circles circle-two"></div>
-      <div class="circles circle-three"></div>
-      <div class="circles circle-four"></div>
-      <div class="circles circle-five"></div>
+      <div class="circles circle-one"><div class="circleline"></div></div>
+      <div class="circles circle-two"><div class="circleline"></div></div>
+      <div class="circles circle-three"><div class="circleline"></div></div>
+      <div class="circles circle-four"><div class="circleline"></div></div>
+      <div class="circles circle-five">
+        <div class="circleline lastline"></div>
+      </div>
+
       <div class="stepdetails">
         <h2 class="stepheader">Step 1</h2>
         <p>It’s easy! Simply send your content to us at Raba</p>
@@ -112,7 +133,7 @@
       </div>
     </section>
 
-    <section class="rabaofferings">
+    <section class="rabaofferings sections" id="offerings">
       <h1 class="rabaofferings-header sectionheader">Raba Offerings</h1>
       <button class="rabanow rabanow-offerings">RABA NOW</button>
 
@@ -187,26 +208,28 @@
       </div>
     </section>
 
-    <section class="rabapricing">
+    <section class="rabapricing sections" id="pricing">
       <h1 class="sectionheader rabapricing-header">Raba Pricing</h1>
       <div class="vertical-line before"></div>
       <div class="vertical-line after"></div>
       <h2 class="pricingtype indi">Individuals</h2>
       <h2 class="pricingtype ent">Enterprise</h2>
-      <div class="details track">
-        <div class="flex">
-          <h2 class="pricingtype">Track</h2>
-          <button class="rabanow-small">raba now</button>
+      <div class="albumtrackcontainer">
+        <div class="details track">
+          <div class="flex">
+            <h2 class="pricingtype">Track</h2>
+            <a href="#popup" class="rabanow-small">raba now</a>
+          </div>
+          <h1 class="price">N1500 <sub>Per Year</sub></h1>
         </div>
-        <h1 class="price">N1500 <sub>Per Year</sub></h1>
-      </div>
-      <div class="details album">
-        <div class="flex">
-          <h2 class="pricingtype">Album</h2>
-          <button class="rabanow-small">raba now</button>
+        <div class="details album">
+          <div class="flex">
+            <h2 class="pricingtype">Album</h2>
+            <a href="#popup" class="rabanow-small">raba now</a>
+          </div>
+          <h1 class="price">N4600 <sub>Per Year</sub></h1>
+          <p>Limit Of 20 Tracks Per Album</p>
         </div>
-        <h1 class="price">N1500 <sub>Per Year</sub></h1>
-        <p>Limit Of 20 Tracks Per Album</p>
       </div>
       <ul class="trackfeatures">
         <li class="trackfeatureslist">1-99 tracks</li>
@@ -219,12 +242,12 @@
       <div class="details contactus">
         <div class="flex">
           <h2 class="pricingtype yellow">Contact Us</h2>
-          <button class="rabanow-small">raba now</button>
+          <a href="#popup" class="rabanow-small">raba now</a>
         </div>
         <p>Enjoy attractive discounts when you distribute over 100 tracks.</p>
       </div>
       <ul class="albumfeatures">
-        <li class="trackfeatureslist">100+ tracks</li>
+        <li class="trackfeatureslist"><a href="#popup">100+ tracks</a></li>
         <li class="trackfeatureslist">150+ global streaming platforms</li>
         <li class="trackfeatureslist">Monthly sales report</li>
         <li class="trackfeatureslist">100% royalty with zero hidden charges</li>
@@ -232,5 +255,21 @@
         <li class="trackfeatureslist">Personalized customer support</li>
       </ul>
     </section>
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <form action="submit" class="contactform">
+          <a href="#rabapricing" class="close">&times;</a>
+          <h1 class="contactform-title">Contact Us</h1>
+          <input type="email" class="email" placeholder="Email" />
+          <input type="text" class="subject" placeholder="Subject" />
+          <textarea
+            type="text"
+            class="message"
+            placeholder="Message"
+          ></textarea>
+          <button class="submit">submit</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
