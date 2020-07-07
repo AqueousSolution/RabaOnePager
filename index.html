@@ -7,6 +7,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Raba</title>
+    <script src="https://kit.fontawesome.com/80319cafcd.js" crossorigin="anonymous"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
@@ -26,15 +27,28 @@
       </ul>
       <div class="contact"><a href="#popup">Contact</a></div>
     </footer>
-    <nav class="nav-container">
-      <img src="rabalogo.png" alt="logo" class="logo" />
-
-      <ul class="menu">
-        <li><a href="#home">home</a></li>
-        <li><a href="#whoweare">who we are</a></li>
-        <li><a href="#howto">How to raba</a></li>
-        <li><a href="#offerings">offerings</a></li>
-        <li><a href="#pricing">pricing</a></li>
+    <nav class="navbar">
+      <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+              <i class="fa fa-bars"></i>
+          </label>
+      <a href="#" class="logo"><img class="logo" src="rabalogo.png"></a>
+      <input type="checkbox" id="chkToggle"></input>
+      <ul class="main-nav" id="js-menu">
+        <li>
+          <a href="#" class="nav-links">Home</a>
+        </li>
+        <li>
+          <a href="#whoweare" class="nav-links">Who we are</a>
+        </li>
+        <li>
+          <a href="#howto" class="nav-links">how to raba</a>
+        </li>
+        <li>
+          <a href="#offerings" class="nav-links">offerings</a>
+        </li>
+        <li>
+          <a href="#pricing" class="nav-links">pricing</a>
+        </li>
       </ul>
     </nav>
     <section class="home sections" id="home">
@@ -47,7 +61,6 @@
 
     <section class="whoweare sections" id="whoweare">
       <div class="contentholder one">
-        <div class="shortline"></div>
         <h1 class="subtitle">Who We Are</h1>
 
         <p class="subcontent">
@@ -57,7 +70,6 @@
         </p>
       </div>
       <div class="contentholder two">
-        <div class="shortline"></div>
         <h1 class="subtitle">What We Do</h1>
 
         <p class="subcontent">
@@ -67,7 +79,6 @@
         </p>
       </div>
       <div class="contentholder three">
-        <div class="shortline"></div>
         <h1 class="subtitle">Why We Do It</h1>
 
         <p class="subcontent">
@@ -83,6 +94,9 @@
           Who We Are & <br />
           What We Do
         </h1>
+        <h2 class="yellow">
+          Who We Are & What We Do
+        </h2>
         <hr class="short-underline yellow" />
       </div>
     </section>
@@ -90,46 +104,59 @@
     <section class="howtoraba sections" id="howto">
       <h1 class="howtoraba-header sectionheader">How To Raba</h1>
       <button class="rabanow rabanow-howtoraba">RABA NOW</button>
-      <img src="redstep1.png" alt="step1" class="stepone steps" />
-      <img src="bluestep2.png" alt="step2" class="steptwo steps" />
-      <img src="yellowstep3.png" alt="step3" class="stepthree steps" />
-      <img src="whitestep4.png" alt="step4" class="stepfour steps" />
-      <img src="greenstep5.png" alt="step5" class="stepfive steps" />
-      <div class="circles circle-one"><div class="circleline"></div></div>
-      <div class="circles circle-two"><div class="circleline"></div></div>
-      <div class="circles circle-three"><div class="circleline"></div></div>
-      <div class="circles circle-four"><div class="circleline"></div></div>
-      <div class="circles circle-five">
-        <div class="circleline lastline"></div>
+      <div class="stepone">
+        <img src="redstep1.png" alt="step1" class=" steps" />
+        <div class="circles circle-one"><div class="circleline"></div></div>
+        <div class="stepdetails">
+          <h2 class="stepheader">Step 1</h2>
+          <p>It’s easy! Simply send your content to us at Raba</p>
+        </div>
       </div>
 
-      <div class="stepdetails">
-        <h2 class="stepheader">Step 1</h2>
-        <p>It’s easy! Simply send your content to us at Raba</p>
+      <div class="steptwo">
+        <img src="bluestep2.png" alt="step2" class=" steps" />
+        <div class="circles circle-two"><div class="circleline"></div></div>
+        <div class="stepdetails">
+          <h2 class="stepheader">Step 2</h2>
+          <p>
+            We put your content on 150+ streaming platforms all over the world
+          </p>
+        </div>
       </div>
-      <div class="stepdetails">
-        <h2 class="stepheader">Step 2</h2>
-        <p>
-          We put your content on 150+ streaming platforms all over the world
-        </p>
+
+      <div class="stepthree">
+        <img src="yellowstep3.png" alt="step3" class=" steps" />
+        <div class="circles circle-three"><div class="circleline"></div></div>
+        <div class="stepdetails">
+          <h2 class="stepheader">Step 3</h2>
+          <p>
+            We also provide periodical reports showing the performance of your
+            content across all platforms
+          </p>
+        </div>
       </div>
-      <div class="stepdetails">
-        <h2 class="stepheader">Step 3</h2>
-        <p>
-          We also provide periodical reports showing the performance of your
-          content across ll platforms
-        </p>
+
+      <div class="stepfour">
+        <img src="whitestep4.png" alt="step4" class=" steps" />
+        <div class="circles circle-four"><div class="circleline"></div></div>
+        <div class="stepdetails">
+          <h2 class="stepheader">Step 4</h2>
+          <p>You receive 100% of the royalty you make across all platforms.</p>
+        </div>
       </div>
-      <div class="stepdetails">
-        <h2 class="stepheader">Step 4</h2>
-        <p>You receive 100% of the royalty you make across all platforms.</p>
-      </div>
-      <div class="stepdetails">
-        <h2 class="stepheader">Step 5</h2>
-        <p>
-          You also maintain 100% ownership and rights to your content- no hidden
-          charges
-        </p>
+
+      <div class="stepfive">
+        <img src="greenstep5.png" alt="step5" class=" steps" />
+        <div class="circles circle-five">
+          <div class="circleline lastline"></div>
+        </div>
+        <div class="stepdetails">
+          <h2 class="stepheader">Step 5</h2>
+          <p>
+            You also maintain 100% ownership and rights to your content- no
+            hidden charges
+          </p>
+        </div>
       </div>
     </section>
 
@@ -240,7 +267,7 @@
         <li class="trackfeatureslist">Personalized customer support</li>
       </ul>
       <div class="details contactus">
-        <div class="flex">
+        <div class="flexer">
           <h2 class="pricingtype yellow">Contact Us</h2>
           <a href="#popup" class="rabanow-small">raba now</a>
         </div>
