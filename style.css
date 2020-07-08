@@ -326,11 +326,19 @@ section.rabaofferings {
   background-color: transparent;
   color: #f9b03e;
   border-radius: 10px;
-  padding: 0.8rem 1.2rem;
+  padding: 0.8rem 1.8rem;
   font-size: 14px;
   border: 1px solid #ffffff;
   justify-self: end;
+  transition: all 0.3s;
 }
+
+.rabanow:hover {
+  background-color: #f9b03e;
+  color: #fff;
+  border: none;
+}
+
 .subcontents {
   margin-top: 2%;
   font-size: 12px;
@@ -488,6 +496,7 @@ section.rabaofferings {
 .album {
   grid-row: 5/6;
   grid-column: 1/2;
+  margin-top: 7%;
 }
 p {
   font-size: 14px;
@@ -519,14 +528,18 @@ sub {
   background-color: transparent;
   color: #f9b03e;
   border-radius: 6px;
-  padding: 0.2rem 0.1rem;
   font-size: 8px;
   text-transform: uppercase;
   border: 1px solid rgba(255, 255, 255, 0.4);
-  padding: 0.3rem 0.6rem;
+  padding: 0.4rem 0.6rem;
   z-index: 999;
 }
 
+.rabanow-small:hover {
+  background-color: #f9b03e;
+  color: #fff;
+  border: none;
+}
 .trackfeatures {
   grid-row: 4/6;
   grid-column: 2/3;
@@ -787,7 +800,7 @@ div.lastline {
     grid-template-columns: 20%;
     grid-template-rows: repeat(9, 1fr);
     padding: 1% 10%;
-    height: 110vh;
+    height: 130vh;
   }
 
   .howtoraba-header {
@@ -973,5 +986,16 @@ ul.footer-menu li ::before {
 @media (max-width: 700px) {
   .submit {
     width: 50%;
+  }
+
+  .popup-content {
+    width: 90%;
+    height: 50%;
+  }
+  .contactform {
+    display: grid;
+    grid-template-rows: 1rem 1rem 3rem 9rem 3rem;
+    padding: 1rem 1rem;
+    grid-gap: 0.6rem;
   }
 }
