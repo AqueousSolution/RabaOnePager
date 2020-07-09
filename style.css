@@ -153,7 +153,7 @@ section {
     text-align: center;
     margin-left: 0;
   }
-  .sections {
+  .stickysections {
     position: relative !important;
   }
   .maincontent {
@@ -296,7 +296,8 @@ section.rabaofferings {
     display: grid;
     grid-template-rows: repeat(10, 1fr);
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 1.2rem;
+    grid-gap: 2rem;
+    height: 140vh;
   }
 }
 .rabaofferings-header {
@@ -400,6 +401,7 @@ section.rabaofferings {
 @media (max-width: 700px) {
   .bullet {
     height: 2rem;
+    align-self: start;
   }
 
   .rabaofferings-container {
@@ -409,7 +411,7 @@ section.rabaofferings {
   }
 
   .subcontents {
-    display: none;
+    color: rgba(255, 255, 255, 0.8);
   }
   .subheader {
     color: rgba(255, 255, 255, 0.9);
@@ -861,6 +863,7 @@ div.lastline {
     padding: 0% 12% 0 0%;
     margin-right: 5%;
     font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
   }
   .rabanow-howtoraba {
     display: none;
