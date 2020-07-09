@@ -5,11 +5,11 @@
   font-family: Nunito;
   color: white;
 }
-/* .sections {
+.sections {
   position: sticky !important;
   top: 0;
   height: 100vh;
-} */
+}
 
 .navbar {
   font-size: 18px;
@@ -153,9 +153,8 @@ section {
     text-align: center;
     margin-left: 0;
   }
-  .ass {
-    margin: 0 auto;
-    transform: translateX(-50%);
+  .sections {
+    position: relative !important;
   }
   .maincontent {
     margin-left: 50%;
