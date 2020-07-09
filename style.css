@@ -484,6 +484,10 @@ section.rabaofferings {
   grid-column: 3/4;
   margin-left: 1.5rem;
 }
+
+.limit {
+  margin-left: 16%;
+}
 .pricingtype {
   font-size: 1.5rem;
   color: white;
@@ -492,6 +496,7 @@ section.rabaofferings {
 .price {
   color: #f9b03e;
   font-size: 1.2rem;
+  margin-left: 16%;
 }
 .flex {
   display: flex;
@@ -531,9 +536,11 @@ p {
   }
   .flex {
     padding-right: 0%;
+    justify-content: space-around;
   }
   .flexer {
-    padding-right: 40%;
+    padding-right: 0%;
+    justify-content: space-around;
   }
 }
 sub {
@@ -614,17 +621,21 @@ ul li.trackfeatureslist::before {
     grid-template-rows: repeat(15, 1fr);
     padding-left: 1%;
     padding-top: 4%;
-    height: 150vh;
+    height: 130vh;
   }
   .indi {
+    text-align: center;
+    margin-left: 0;
     grid-row: 3/4;
     grid-column: 1/2;
   }
 
   .ent {
-    grid-row: 9/10;
+    grid-row: 8/9;
     grid-column: 1/2;
     align-self: center;
+    text-align: center;
+    margin: 20% 0 5% 0;
   }
   .trackfeatures {
     grid-row: 5/8;
@@ -632,38 +643,35 @@ ul li.trackfeatureslist::before {
     list-style: none;
   }
   .contactus {
-    grid-row: 10/11;
+    grid-row: 9/10;
     grid-column: 1/2;
     display: grid;
     align-content: center;
   }
 
   .albumfeatures {
-    grid-row: 11/14;
+    grid-row: 10/13;
     grid-column: 1/2;
     list-style: none;
   }
   ul li.trackfeatureslist {
-    margin-left: 3rem;
+    margin-left: 20%;
   }
   .albumtrackcontainer {
-    display: flex;
-    justify-content: space-between;
     grid-row: 4/5;
     grid-column: 1/2;
     padding-right: 10%;
   }
-  .vertical-line {
-    border: 0.1px solid rgba(255, 255, 255, 0.5);
-    height: 1px;
-    margin-top: 10%;
-    grid-row: 8/9;
-    grid-column: 1/2;
-  }
 
   .rabapricing-header {
-    margin-left: 8%;
+    margin-left: 0;
+    text-align: center;
     margin-bottom: 12%;
+  }
+
+  .enjoy {
+    margin-left: 12%;
+    width: 50%;
   }
 }
 .howtoraba {
