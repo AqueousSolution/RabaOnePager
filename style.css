@@ -297,7 +297,7 @@ section.rabaofferings {
     grid-template-rows: repeat(10, 1fr);
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 2rem;
-    height: 140vh;
+    height: 160vh;
   }
 }
 .rabaofferings-header {
@@ -621,7 +621,7 @@ ul li.trackfeatureslist::before {
     grid-template-rows: repeat(15, 1fr);
     padding-left: 1%;
     padding-top: 4%;
-    height: 130vh;
+    height: 150vh;
   }
   .indi {
     text-align: center;
@@ -631,11 +631,11 @@ ul li.trackfeatureslist::before {
   }
 
   .ent {
-    grid-row: 8/9;
+    grid-row: 9/10;
     grid-column: 1/2;
     align-self: center;
     text-align: center;
-    margin: 20% 0 5% 0;
+    margin-left: 0;
   }
   .trackfeatures {
     grid-row: 5/8;
@@ -643,14 +643,14 @@ ul li.trackfeatureslist::before {
     list-style: none;
   }
   .contactus {
-    grid-row: 9/10;
+    grid-row: 10/11;
     grid-column: 1/2;
     display: grid;
     align-content: center;
   }
 
   .albumfeatures {
-    grid-row: 10/13;
+    grid-row: 11/14;
     grid-column: 1/2;
     list-style: none;
   }
@@ -1038,8 +1038,16 @@ ul.footer-menu li ::before {
   }
   .contactform {
     display: grid;
-    grid-template-rows: 1rem 1rem 3rem 9rem 3rem;
+    grid-template-rows: 2rem 2rem 3rem 8rem 3rem;
     padding: 1rem 1rem;
     grid-gap: 0.6rem;
+  }
+
+  textarea {
+    width: 80%;
+  }
+
+  .footer {
+    display: none;
   }
 }
