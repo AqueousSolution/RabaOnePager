@@ -268,7 +268,7 @@
       <div class="details contactus">
         <div class="flexer">
           <h2 class="pricingtype yellow">Contact Us</h2>
-          <a href="#popup" class="rabanow-small">raba now</a>
+          <a href="#popup" class="rabanow-small ctc">Contact Us</a>
         </div>
         <p class="enjoy">Enjoy attractive discounts when you distribute over 100 tracks.</p>
       </div>
@@ -281,19 +281,20 @@
         <li class="trackfeatureslist">Personalized customer support</li>
       </ul>
     </section>
-    <div class="popup" id="popup">
+    <div id="popup" class="popup">
       <div class="popup-content">
-        <form action="submit" class="contactform">
+        <form action="submit" action="mail_handler.php" method="post" class="contactform">
           <a href="#rabapricing" class="close">&times;</a>
           <h1 class="contactform-title">Contact Us</h1>
-          <input type="email" class="email" placeholder="Email" />
-          <input type="text" class="subject" placeholder="Subject" />
+          <input type="email" class="email" name="email" placeholder="Email" />
+          <input type="text" class="subject" name="subject" placeholder="Subject" />
           <textarea
             type="text"
             class="message"
+            name="message"
             placeholder="Message"
           ></textarea>
-          <button class="submit">submit</button>
+          <input type="submit" name="submit" value="Submit" class="submit">
         </form>
       </div>
     </div>

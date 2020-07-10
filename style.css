@@ -499,14 +499,17 @@ section.rabaofferings {
   margin-left: 16%;
 }
 .pricingtype {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: white;
   font-weight: 100;
 }
 .price {
   color: #f9b03e;
   font-size: 1.2rem;
-  margin-left: 16%;
+}
+
+.enjoy {
+  width: 83%;
 }
 .flex {
   display: flex;
@@ -566,8 +569,9 @@ sub {
   font-size: 8px;
   text-transform: uppercase;
   border: 1px solid rgba(255, 255, 255, 0.4);
-  padding: 0.4rem 0.6rem;
+  padding: 0.4rem 0.3rem;
   z-index: 999;
+  text-align: center;
 }
 
 .rabanow-small:hover {
@@ -636,6 +640,9 @@ ul li.trackfeatureslist::before {
     padding-bottom: 15%;
   }
 
+  .price {
+    margin-left: 16%;
+  }
   .vertical-line {
     margin-left: 10%;
   }
@@ -1017,6 +1024,8 @@ textarea {
   text-transform: uppercase;
   border: 0;
   font-size: 1rem;
+  text-align: center;
+  padding: 0%;
 }
 .contactform-title {
   font-size: 1.5rem;
@@ -1078,5 +1087,10 @@ ul.footer-menu li ::before {
 
   .footer {
     display: none;
+  }
+
+  .ctc {
+    padding: 0.4rem 0rem;
+    text-align: center;
   }
 }
