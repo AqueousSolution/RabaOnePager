@@ -495,9 +495,6 @@ section.rabaofferings {
   margin-left: 1.5rem;
 }
 
-.limit {
-  margin-left: 16%;
-}
 .pricingtype {
   font-size: 1.3rem;
   color: white;
@@ -554,6 +551,10 @@ p {
   .flexer {
     padding-right: 0%;
     justify-content: space-around;
+  }
+
+  .limit {
+    margin-left: 16%;
   }
 }
 sub {
@@ -632,12 +633,12 @@ ul li.trackfeatureslist::before {
   .rabapricing {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(12, max-content);
+    grid-template-rows: repeat(13, max-content);
     padding-top: 0%;
     height: 100%;
     grid-gap: 1.5rem;
     padding-left: 1%;
-    padding-bottom: 15%;
+    padding-bottom: 1%;
   }
 
   .price {
@@ -1030,6 +1031,10 @@ textarea {
 .contactform-title {
   font-size: 1.5rem;
 }
+
+.mobilefooter {
+  display: none;
+}
 .footer {
   height: 120px;
   width: 100%;
@@ -1070,6 +1075,28 @@ ul.footer-menu li ::before {
     width: 50%;
   }
 
+  .mobilefooter {
+    display: block;
+    grid-row: 13/14;
+    grid-column: 1/2;
+  }
+  .mobilefooter-menu {
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding: 10% 4%;
+  }
+  .mobilefooter-menu p {
+    font-size: 15px;
+  }
+  .mobilefooter-icons {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 50%;
+    justify-self: right;
+  }
   .popup-content {
     width: 90%;
     height: 50%;
@@ -1086,6 +1113,10 @@ ul.footer-menu li ::before {
   }
 
   .footer {
+    display: none;
+  }
+
+  .contact {
     display: none;
   }
 
