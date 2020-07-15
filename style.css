@@ -1099,11 +1099,11 @@ ul.footer-menu li ::before {
   }
   .popup-content {
     width: 90%;
-    height: 50%;
+    height: 60%;
   }
   .contactform {
     display: grid;
-    grid-template-rows: 2rem 2rem 3rem 8rem 3rem;
+    grid-template-rows: 2rem 2rem 3rem 8rem 3rem 2rem;
     padding: 1rem 1rem;
     grid-gap: 0.6rem;
   }
