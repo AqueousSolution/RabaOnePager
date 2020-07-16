@@ -1078,6 +1078,10 @@ ul.footer-menu li ::before {
   font-size: 1rem;
 }
 
+.ctc {
+  margin-top: 0.3rem;
+}
+
 @media (max-width: 700px) {
   .submit {
     width: 50%;
@@ -1131,5 +1135,11 @@ ul.footer-menu li ::before {
   .ctc {
     padding: 0.4rem 0rem;
     text-align: center;
+    margin-left: 2.7rem;
+    margin-top: 0.5rem;
+  }
+
+  .ctc-text {
+    margin-left: 2.7rem;
   }
 }
