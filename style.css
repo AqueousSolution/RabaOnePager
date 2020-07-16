@@ -18,7 +18,12 @@
   padding-bottom: 10px;
   z-index: 99999;
 }
-
+.active {
+  color: #f9b03e;
+  text-decoration: none;
+  font-size: 12px;
+  margin-left: 20px;
+}
 .logo {
   height: 2.4rem;
 }
@@ -127,20 +132,22 @@ section {
   width: 100%;
 }
 
+.topsection {
+  margin: 0 6.5%;
+}
+
 .maintitle {
   color: #f9b03e;
-  font-family: "Montserrat";
+  font-family: "Montserrat" !important;
   font-size: 45px;
   display: table-caption;
   margin-top: 68%;
-  margin-left: 20%;
   text-transform: uppercase;
   font-weight: 400;
 }
 
 .maincontent {
   color: white;
-  margin-left: 6.5%;
   width: 30vw;
   margin-top: 1%;
 }
@@ -347,6 +354,7 @@ section.rabaofferings {
   border: 1px solid #ffffff;
   justify-self: end;
   transition: all 0.3s;
+  z-index: 9999;
 }
 
 .rabanow:hover {

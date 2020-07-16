@@ -22,28 +22,32 @@
       <input type="checkbox" id="chkToggle"></input>
       <ul class="main-nav" id="js-menu">
         <li>
-          <a href="#" class="nav-links">Home</a>
+          <a href="#" id="homelink" class="nav-links">Home</a>
         </li>
         <li>
-          <a href="#whoweare" class="nav-links">Who we are</a>
+          <a href="#whoweare" id="whowearelink"class="nav-links">Who we are</a>
         </li>
         <li>
-          <a href="#howto" class="nav-links">how to raba</a>
+          <a href="#howto" id="howtolink" class="nav-links">how to raba</a>
         </li>
         <li>
-          <a href="#offerings" class="nav-links">offerings</a>
+          <a href="#offerings" id="offeringslink" class="nav-links">offerings</a>
         </li>
         <li>
-          <a href="#pricing" class="nav-links">pricing</a>
+          <a href="#pricing" id="pricinglink" class="nav-links">pricing</a>
         </li>
       </ul>
     </nav>
-    <section class="home stickysections" id="home">
-      <h1 class="maintitle">Global  Entertainment Distribution</h1>
-      <p class="maincontent">
-        Reach the world with your content today as we journey with you to
-        greatness. Just Raba It.
-      </p>
+    
+      
+          <section class="home stickysections" id="home">
+              <div class="topsection">
+              <h1 class="maintitle">Global  Entertainment Distribution</h1>
+              <p class="maincontent">
+                Reach the world with your content today as we journey with you to
+                greatness. Just Raba It.
+              </p>
+        </div>
     </section>
 
     <section class="whoweare stickysections" id="whoweare">
@@ -230,15 +234,16 @@
         <div class="details track">
           <div class="flex">
             <h2 class="pricingtype">Track</h2>
-            <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScBVNmDl2zIMVKJHHK0gYCYRxYVUObDmDP150ybiwYrtZvVIA/viewform?embedded=true" class="rabanow-small">raba now</a>
+            <a  href="https://docs.google.com/forms/d/e/1FAIpQLScBVNmDl2zIMVKJHHK0gYCYRxYVUObDmDP150ybiwYrtZvVIA/viewform?embedded=true" class="rabanow-small">raba now</a>
           </div>
           <h1 class="price">N1500 <sub>Per Year</sub></h1>
         </div>
         <div class="details album">
           <div class="flex">
             <h2 class="pricingtype">Album</h2>
-            <a target="_blank"href="https://docs.google.com/forms/d/e/1FAIpQLSc8qeq5L248k1uvBxjXovxy8TXLBZJcjQ1T1BhzuMKzjyA8cg/viewform?embedded=true" class="rabanow-small">raba now</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc8qeq5L248k1uvBxjXovxy8TXLBZJcjQ1T1BhzuMKzjyA8cg/viewform?embedded=true" class="rabanow-small">raba now</a>
           </div>
+          
           <h1 class="price">N4600 <sub>Per Year</sub></h1>
           <p class="limit">Limit Of 20 Tracks Per Album</p>
         </div>
@@ -252,11 +257,11 @@
         <li class="trackfeatureslist">Personalized customer support</li>
       </ul>
       <div class="details contactus">
-        <div class="flexer">
+     
           <h2 class="pricingtype yellow">Contact Us</h2>
-          <a href="#popup" class="rabanow-small ctc">Contact Us</a>
-        </div>
+          
         <p class="enjoy">Enjoy attractive discounts when you distribute over 100 tracks.</p>
+        <a href="#popup" class="rabanow-small ctc">Contact Us</a>
       </div>
       <ul class="albumfeatures">
         <li class="trackfeatureslist"><a href="#popup">100+ tracks</a></li>
@@ -297,8 +302,12 @@
           <a href="https://m.facebook.com/Raba-109231523941586/posts/?ref=bookmarks&mt_nav=0"  target="_blank"><img src="ig.svg"/></a>
         </li>
       </ul>
+     
       <div class="contact"><a href="#popup">Contact</a></div>
     </footer>
+ 
+ 
+
     <div id="popup" class="popup">
       <div class="popup-content">
         <form data-netlify="true" method="post" class="contactform">
@@ -316,5 +325,36 @@
         </form>
       </div>
     </div>
+    <script>
+        window.onscroll = function() {
+          myFunction(sectionZero, 500, sectionZeroid);
+          myFunction(sectionOne, 1000, sectionOneid);
+          myFunction(sectionTwo, 1700, sectionTwoid);
+          myFunction(sectionThree,2200, sectionThreeid);
+          myFunction(sectionFour,3000, sectionFourid);
+          
+          
+        };
+        let sectionZeroid = document.getElementById('homelink');
+        let sectionOneid = document.getElementById('whowearelink');
+        let sectionTwoid = document.getElementById('howtolink');
+        let sectionThreeid = document.getElementById('offeringslink');
+        let sectionFourid = document.getElementById('pricinglink');
+        
+        let sectionZero = 0
+        let sectionOne = 500;
+        let sectionTwo = 1010;
+        let sectionThree = 1720;
+        let sectionFour = 2230;
+        
+        function myFunction(pos, end, id) {
+          if (document.body.scrollTop > pos &&  document.body.scrollTop < end|| document.documentElement.scrollTop >=pos && document.documentElement.scrollTop < end) {
+            id.classList.add("active");
+          } else{
+           id.classList.remove("active");
+          }
+        }
+       
+        </script>
   </body>
 </html>
