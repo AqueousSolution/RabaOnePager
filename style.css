@@ -31,6 +31,7 @@ a:hover {
 }
 .stickysections {
   position: sticky !important;
+  position: -webkit-sticky;
   top: 0;
   height: 100vh;
 }
