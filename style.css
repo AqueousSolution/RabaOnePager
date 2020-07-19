@@ -5,13 +5,37 @@
   font-family: Nunito;
   color: white;
 }
+
+html {
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+}
+
+a {
+  color: white;
+}
+a:focus {
+  color: #f9b03e;
+}
+a:hover {
+  text-decoration: none;
+}
+.modal {
+  z-index: 9999999;
+}
 .stickysections {
   position: sticky !important;
   top: 0;
   height: 100vh;
 }
 
-.navbar {
+.navigation-bar {
   font-size: 18px;
   background-color: black;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -70,7 +94,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .navbar {
+  .navigation-bar {
     display: flex;
     justify-content: space-between;
     padding-bottom: 0;
@@ -320,7 +344,7 @@ section.rabaofferings {
 }
 
 .sectionheader {
-  font-size: 1.8rem;
+  font-size: 27px !important;
   position: relative;
 }
 
@@ -349,12 +373,13 @@ section.rabaofferings {
   background-color: transparent;
   color: #f9b03e;
   border-radius: 10px;
-  padding: 0.8rem 1.8rem;
-  font-size: 14px;
+  padding: 1rem 1.8rem;
+  font-size: 0.7rem;
   border: 1px solid #ffffff;
   justify-self: end;
   transition: all 0.3s;
   z-index: 9999;
+  text-align: center;
 }
 
 .rabanow:hover {
@@ -504,13 +529,13 @@ section.rabaofferings {
 }
 
 .pricingtype {
-  font-size: 1.3rem;
+  font-size: 20px;
   color: white;
   font-weight: 100;
 }
 .price {
   color: #f9b03e;
-  font-size: 1.2rem;
+  font-size: 1.2rem !important;
 }
 
 .enjoy {
@@ -853,10 +878,12 @@ div.lastline {
 }
 .stepheader {
   text-align: center;
+  font-size: 1.3rem;
 }
 .stepdetails p {
   text-align: center;
   padding: 1% 20%;
+  font-size: 0.8rem;
 }
 .rabanow-howtoraba {
   grid-column: 5/6;
