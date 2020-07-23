@@ -163,7 +163,7 @@ section {
 
 .maintitle {
   color: #f9b03e;
-  font-family: "Montserrat" !important;
+  font-family: "Montserrat", sans-serif !important;
   font-size: 45px;
   display: table-caption;
   margin-top: 68%;
@@ -507,7 +507,7 @@ section.rabaofferings {
 .rabapricing {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   padding-left: 10%;
   padding-top: 4%;
 }
@@ -1068,10 +1068,7 @@ textarea {
   font-size: 1.5rem;
 }
 
-.mobilefooter {
-  display: none;
-}
-.footer {
+/* .footer {
   height: 120px;
   width: 100%;
   background-color: transparent;
@@ -1080,10 +1077,10 @@ textarea {
   padding-left: 7%;
   padding-right: 5%;
   align-content: center;
-  position: fixed;
+  position: absolute;
   bottom: 0%;
   z-index: 9999;
-}
+} */
 
 ul.footer-menu {
   display: flex;
@@ -1104,6 +1101,26 @@ ul.footer-menu li ::before {
   align-self: center;
   padding-right: 6%;
   font-size: 1rem;
+}
+
+.mobilefooter {
+  display: block;
+  grid-row: 13/14;
+  grid-column: 1/2;
+}
+.mobilefooter-menu {
+  display: grid;
+  list-style: none;
+  grid-template-columns: 35% 65%;
+  grid-template-rows: repeat(1, 1fr);
+  padding: 10% 4%;
+}
+.mobilefooter-icons {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 50%;
+  justify-self: left;
 }
 
 .ctc {
